@@ -7,6 +7,7 @@ target 'Iqama' do
 
   # Pods for Iqama
   pod 'SnapKit', '~> 3.0'
+  pod 'MaterialControls', '~> 1.2'
 
   target 'IqamaTests' do
     inherit! :search_paths
