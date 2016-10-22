@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EAF961E1DBBADD300C72812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF961D1DBBADD300C72812 /* AppDelegate.swift */; };
+		1EAF96201DBBADD300C72812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF961F1DBBADD300C72812 /* ViewController.swift */; };
+		1EAF96231DBBADD300C72812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAF96211DBBADD300C72812 /* Main.storyboard */; };
+		1EAF96251DBBADD300C72812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EAF96241DBBADD300C72812 /* Assets.xcassets */; };
+		1EAF96281DBBADD300C72812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAF96261DBBADD300C72812 /* LaunchScreen.storyboard */; };
+		1EAF96331DBBADD300C72812 /* IqamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF96321DBBADD300C72812 /* IqamaTests.swift */; };
+		1EAF963E1DBBADD300C72812 /* IqamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF963D1DBBADD300C72812 /* IqamaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EAF962F1DBBADD300C72812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EAF96121DBBADD300C72812 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EAF96191DBBADD300C72812;
+			remoteInfo = Iqama;
+		};
+		1EAF963A1DBBADD300C72812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EAF96121DBBADD300C72812 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EAF96191DBBADD300C72812;
+			remoteInfo = Iqama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EAF961A1DBBADD300C72812 /* Iqama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iqama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EAF961D1DBBADD300C72812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1EAF961F1DBBADD300C72812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1EAF96221DBBADD300C72812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EAF96241DBBADD300C72812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EAF96271DBBADD300C72812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1EAF96291DBBADD300C72812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EAF962E1DBBADD300C72812 /* IqamaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IqamaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EAF96321DBBADD300C72812 /* IqamaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IqamaTests.swift; sourceTree = "<group>"; };
+		1EAF96341DBBADD300C72812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EAF96391DBBADD300C72812 /* IqamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IqamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EAF963D1DBBADD300C72812 /* IqamaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IqamaUITests.swift; sourceTree = "<group>"; };
+		1EAF963F1DBBADD300C72812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EAF96171DBBADD300C72812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EAF962B1DBBADD300C72812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EAF96361DBBADD300C72812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EAF96111DBBADD300C72812 = {
+			isa = PBXGroup;
+			children = (
+				1EAF961C1DBBADD300C72812 /* Iqama */,
+				1EAF96311DBBADD300C72812 /* IqamaTests */,
+				1EAF963C1DBBADD300C72812 /* IqamaUITests */,
+				1EAF961B1DBBADD300C72812 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EAF961B1DBBADD300C72812 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EAF961A1DBBADD300C72812 /* Iqama.app */,
+				1EAF962E1DBBADD300C72812 /* IqamaTests.xctest */,
+				1EAF96391DBBADD300C72812 /* IqamaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EAF961C1DBBADD300C72812 /* Iqama */ = {
+			isa = PBXGroup;
+			children = (
+				1EAF961D1DBBADD300C72812 /* AppDelegate.swift */,
+				1EAF961F1DBBADD300C72812 /* ViewController.swift */,
+				1EAF96211DBBADD300C72812 /* Main.storyboard */,
+				1EAF96241DBBADD300C72812 /* Assets.xcassets */,
+				1EAF96261DBBADD300C72812 /* LaunchScreen.storyboard */,
+				1EAF96291DBBADD300C72812 /* Info.plist */,
+			);
+			path = Iqama;
+			sourceTree = "<group>";
+		};
+		1EAF96311DBBADD300C72812 /* IqamaTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EAF96321DBBADD300C72812 /* IqamaTests.swift */,
+				1EAF96341DBBADD300C72812 /* Info.plist */,
+			);
+			path = IqamaTests;
+			sourceTree = "<group>";
+		};
+		1EAF963C1DBBADD300C72812 /* IqamaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EAF963D1DBBADD300C72812 /* IqamaUITests.swift */,
+				1EAF963F1DBBADD300C72812 /* Info.plist */,
+			);
+			path = IqamaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EAF96191DBBADD300C72812 /* Iqama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EAF96421DBBADD300C72812 /* Build configuration list for PBXNativeTarget "Iqama" */;
+			buildPhases = (
+				1EAF96161DBBADD300C72812 /* Sources */,
+				1EAF96171DBBADD300C72812 /* Frameworks */,
+				1EAF96181DBBADD300C72812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Iqama;
+			productName = Iqama;
+			productReference = 1EAF961A1DBBADD300C72812 /* Iqama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EAF962D1DBBADD300C72812 /* IqamaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EAF96451DBBADD300C72812 /* Build configuration list for PBXNativeTarget "IqamaTests" */;
+			buildPhases = (
+				1EAF962A1DBBADD300C72812 /* Sources */,
+				1EAF962B1DBBADD300C72812 /* Frameworks */,
+				1EAF962C1DBBADD300C72812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EAF96301DBBADD300C72812 /* PBXTargetDependency */,
+			);
+			name = IqamaTests;
+			productName = IqamaTests;
+			productReference = 1EAF962E1DBBADD300C72812 /* IqamaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EAF96381DBBADD300C72812 /* IqamaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EAF96481DBBADD300C72812 /* Build configuration list for PBXNativeTarget "IqamaUITests" */;
+			buildPhases = (
+				1EAF96351DBBADD300C72812 /* Sources */,
+				1EAF96361DBBADD300C72812 /* Frameworks */,
+				1EAF96371DBBADD300C72812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EAF963B1DBBADD300C72812 /* PBXTargetDependency */,
+			);
+			name = IqamaUITests;
+			productName = IqamaUITests;
+			productReference = 1EAF96391DBBADD300C72812 /* IqamaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EAF96121DBBADD300C72812 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = lognlabs;
+				TargetAttributes = {
+					1EAF96191DBBADD300C72812 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1EAF962D1DBBADD300C72812 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1EAF96191DBBADD300C72812;
+					};
+					1EAF96381DBBADD300C72812 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1EAF96191DBBADD300C72812;
+					};
+				};
+			};
+			buildConfigurationList = 1EAF96151DBBADD300C72812 /* Build configuration list for PBXProject "Iqama" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EAF96111DBBADD300C72812;
+			productRefGroup = 1EAF961B1DBBADD300C72812 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EAF96191DBBADD300C72812 /* Iqama */,
+				1EAF962D1DBBADD300C72812 /* IqamaTests */,
+				1EAF96381DBBADD300C72812 /* IqamaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EAF96181DBBADD300C72812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EAF96281DBBADD300C72812 /* LaunchScreen.storyboard in Resources */,
+				1EAF96251DBBADD300C72812 /* Assets.xcassets in Resources */,
+				1EAF96231DBBADD300C72812 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EAF962C1DBBADD300C72812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EAF96371DBBADD300C72812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EAF96161DBBADD300C72812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EAF96201DBBADD300C72812 /* ViewController.swift in Sources */,
+				1EAF961E1DBBADD300C72812 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EAF962A1DBBADD300C72812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EAF96331DBBADD300C72812 /* IqamaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EAF96351DBBADD300C72812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EAF963E1DBBADD300C72812 /* IqamaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EAF96301DBBADD300C72812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EAF96191DBBADD300C72812 /* Iqama */;
+			targetProxy = 1EAF962F1DBBADD300C72812 /* PBXContainerItemProxy */;
+		};
+		1EAF963B1DBBADD300C72812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EAF96191DBBADD300C72812 /* Iqama */;
+			targetProxy = 1EAF963A1DBBADD300C72812 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1EAF96211DBBADD300C72812 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EAF96221DBBADD300C72812 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1EAF96261DBBADD300C72812 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EAF96271DBBADD300C72812 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1EAF96401DBBADD300C72812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EAF96411DBBADD300C72812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EAF96431DBBADD300C72812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Iqama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lognlabs.icb.Iqama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EAF96441DBBADD300C72812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Iqama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lognlabs.icb.Iqama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1EAF96461DBBADD300C72812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IqamaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lognlabs.icb.IqamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Iqama.app/Iqama";
+			};
+			name = Debug;
+		};
+		1EAF96471DBBADD300C72812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IqamaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lognlabs.icb.IqamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Iqama.app/Iqama";
+			};
+			name = Release;
+		};
+		1EAF96491DBBADD300C72812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IqamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lognlabs.icb.IqamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Iqama;
+			};
+			name = Debug;
+		};
+		1EAF964A1DBBADD300C72812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IqamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lognlabs.icb.IqamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Iqama;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EAF96151DBBADD300C72812 /* Build configuration list for PBXProject "Iqama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EAF96401DBBADD300C72812 /* Debug */,
+				1EAF96411DBBADD300C72812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EAF96421DBBADD300C72812 /* Build configuration list for PBXNativeTarget "Iqama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EAF96431DBBADD300C72812 /* Debug */,
+				1EAF96441DBBADD300C72812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EAF96451DBBADD300C72812 /* Build configuration list for PBXNativeTarget "IqamaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EAF96461DBBADD300C72812 /* Debug */,
+				1EAF96471DBBADD300C72812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EAF96481DBBADD300C72812 /* Build configuration list for PBXNativeTarget "IqamaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EAF96491DBBADD300C72812 /* Debug */,
+				1EAF964A1DBBADD300C72812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EAF96121DBBADD300C72812 /* Project object */;
+}
