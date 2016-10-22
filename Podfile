@@ -6,6 +6,7 @@ target 'Iqama' do
   use_frameworks!
 
   # Pods for Iqama
+  pod 'SnapKit', '~> 3.0'
 
   target 'IqamaTests' do
     inherit! :search_paths
