@@ -6,7 +6,7 @@ target 'Iqama' do
   use_frameworks!
 
   # Pods for Iqama
-  #pod 'SnapKit', '~> 3.0'
+  pod 'SnapKit', '~> 0.22.0'
   pod 'MaterialControls', '~> 1.2'
   
   post_install do |installer|
