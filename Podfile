@@ -8,6 +8,14 @@ target 'Iqama' do
   # Pods for Iqama
   #pod 'SnapKit', '~> 3.0'
   pod 'MaterialControls', '~> 1.2'
+  
+  post_install do |installer|
+      installer.pods_project.build_configurations.each do |config|
+          # Configure Pod targets for Xcode 8 compatibility
+          config.build_settings['SWIFT_VERSION'] = '2.3'
+          config.build_settings['ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES'] = 'NO'
+      end
+  end
 
   target 'IqamaTests' do
     inherit! :search_paths
