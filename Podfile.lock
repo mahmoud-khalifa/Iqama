@@ -1,15 +1,12 @@
 PODS:
   - MaterialControls (1.2.2)
-  - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - MaterialControls (~> 1.2)
-  - SnapKit (~> 3.0)
 
 SPEC CHECKSUMS:
   MaterialControls: 1c6b29e78d3a13d8dd6a67ed31b6d26eb5de8f72
-  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: d7f043010290e49535262a97f240e5da36e8dafa
+PODFILE CHECKSUM: 294982fa7a9869dbbff3abb3e85cf1dcad4037bc
 
 COCOAPODS: 1.1.1
