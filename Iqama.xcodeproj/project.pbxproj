@@ -14,6 +14,7 @@
 		1EAF96281DBBADD300C72812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAF96261DBBADD300C72812 /* LaunchScreen.storyboard */; };
 		1EAF96331DBBADD300C72812 /* IqamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF96321DBBADD300C72812 /* IqamaTests.swift */; };
 		1EAF963E1DBBADD300C72812 /* IqamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF963D1DBBADD300C72812 /* IqamaUITests.swift */; };
+		1EAF964C1DBBAF0600C72812 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF964B1DBBAF0600C72812 /* Constants.swift */; };
 		3413407970BE6E131742BCA5 /* Pods_IqamaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D9ABBDAD5ADED5FD717DAC /* Pods_IqamaUITests.framework */; };
 		60399A911E059F0D04D241A2 /* Pods_Iqama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDCBD79F6BAAD7E43CCA37BE /* Pods_Iqama.framework */; };
 		89C496084404E15ABF653469 /* Pods_IqamaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A2C5BCF3A2241A01F53278 /* Pods_IqamaTests.framework */; };
@@ -51,6 +52,7 @@
 		1EAF96391DBBADD300C72812 /* IqamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IqamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAF963D1DBBADD300C72812 /* IqamaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IqamaUITests.swift; sourceTree = "<group>"; };
 		1EAF963F1DBBADD300C72812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EAF964B1DBBAF0600C72812 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		25A2C5BCF3A2241A01F53278 /* Pods_IqamaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IqamaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B5DDFB7B3932B31EB721AA /* Pods-Iqama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iqama.release.xcconfig"; path = "Pods/Target Support Files/Pods-Iqama/Pods-Iqama.release.xcconfig"; sourceTree = "<group>"; };
 		49D9ABBDAD5ADED5FD717DAC /* Pods_IqamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IqamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				1EAF96241DBBADD300C72812 /* Assets.xcassets */,
 				1EAF96261DBBADD300C72812 /* LaunchScreen.storyboard */,
 				1EAF96291DBBADD300C72812 /* Info.plist */,
+				1EAF964B1DBBAF0600C72812 /* Constants.swift */,
 			);
 			path = Iqama;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 			files = (
 				1EAF96201DBBADD300C72812 /* ViewController.swift in Sources */,
 				1EAF961E1DBBADD300C72812 /* AppDelegate.swift in Sources */,
+				1EAF964C1DBBAF0600C72812 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
