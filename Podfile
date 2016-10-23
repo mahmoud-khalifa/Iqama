@@ -8,6 +8,7 @@ target 'Iqama' do
   # Pods for Iqama
   pod 'SnapKit', '~> 0.22.0'
   pod 'MaterialControls', '~> 1.2'
+  pod 'MaterialActionSheetController', '~> 1.0'
   
   post_install do |installer|
       installer.pods_project.build_configurations.each do |config|
