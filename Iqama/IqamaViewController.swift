@@ -10,11 +10,16 @@ import UIKit
 import MaterialControls
 import SnapKit
 import MaterialActionSheetController
+import CVCalendar
 
 class IqamaViewController: UIViewController {
     let prayTable = UITableView()
     let supportButton = MDButton()
     
+    var menuView = CVCalendarMenuView()
+    var calendarView = CVCalendarView()
+    
+    var selectedDay:DayView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +27,13 @@ class IqamaViewController: UIViewController {
         configureView()
         setupConstraints()
         
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        // Commit frames' updates
+        menuView.commitMenuViewUpdate()
+        calendarView.commitCalendarViewUpdate()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,19 +47,45 @@ class IqamaViewController: UIViewController {
     //MARK: drawing the view
     
     private func configureView() {
+        // Calendar view
+        menuView.menuViewDelegate = self
+        calendarView.calendarDelegate = self
         
+        self.view.addSubview(menuView)
+        self.view.addSubview(calendarView)
+    
         // supportButton
         supportButton.setTitle("SUPPORT THE ICB", forState: .Normal)
         supportButton.backgroundColor = Constants.themeColor
         supportButton.rippleColor = UIColor.whiteColor()
         supportButton.addTarget(self, action: #selector(showSupportOptions), forControlEvents: .TouchUpInside)
+        
         self.view.addSubview(supportButton)
     }
     
     private func setupConstraints() {
         supportButton.snp_makeConstraints { make in
+            make.left.right.equalTo(self.view)
+            make.bottom.equalTo(self.bottomLayoutGuide)
             make.height.equalTo(50)
-            make.left.right.bottom.equalTo(self.view)
+        }
+        
+        menuView.snp_makeConstraints { make in
+            make.left.right.equalTo(self.view)
+            make.height.equalTo(24)
+
+            if let offset = self.navigationController?.navigationBar.frame.height {
+                make.top.equalTo(self.topLayoutGuide).offset(offset+20)
+            } else {
+                make.top.equalTo(self.topLayoutGuide)
+
+            }
+        }
+        
+        calendarView.snp_makeConstraints { make in
+            make.left.right.equalTo(self.view)
+            make.top.equalTo(menuView)
+            make.height.equalTo(100)
         }
     }
     
@@ -87,3 +125,26 @@ class IqamaViewController: UIViewController {
     }
 }
 
+
+// MARK: - CVCalendarViewDelegate & CVCalendarMenuViewDelegate
+
+extension IqamaViewController: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
+    
+    /// Required method to implement!
+    func presentationMode() -> CalendarMode {
+        return .WeekView
+    }
+    
+    /// Required method to implement!
+    func firstWeekday() -> Weekday {
+        return .Sunday
+    }
+    
+    
+    // MARK: Optional methods
+    
+    func shouldShowWeekdaysOut() -> Bool {
+        return true
+    }
+    
+}
