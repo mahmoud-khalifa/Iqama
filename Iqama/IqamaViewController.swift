@@ -13,11 +13,12 @@ import MaterialActionSheetController
 import CVCalendar
 
 class IqamaViewController: UIViewController {
+    var menuView = CVCalendarMenuView()
+    var calendarView = CVCalendarView()
+    
     let prayTable = UITableView()
     let supportButton = MDButton()
     
-    var menuView = CVCalendarMenuView()
-    var calendarView = CVCalendarView()
     
     var selectedDay:DayView!
 
@@ -64,21 +65,15 @@ class IqamaViewController: UIViewController {
     }
     
     private func setupConstraints() {
-        supportButton.snp_makeConstraints { make in
-            make.left.right.equalTo(self.view)
-            make.bottom.equalTo(self.bottomLayoutGuide)
-            make.height.equalTo(50)
-        }
-        
         menuView.snp_makeConstraints { make in
             make.left.right.equalTo(self.view)
             make.height.equalTo(24)
-
+            
             if let offset = self.navigationController?.navigationBar.frame.height {
                 make.top.equalTo(self.topLayoutGuide).offset(offset+20)
             } else {
                 make.top.equalTo(self.topLayoutGuide)
-
+                
             }
         }
         
@@ -87,6 +82,14 @@ class IqamaViewController: UIViewController {
             make.top.equalTo(menuView)
             make.height.equalTo(100)
         }
+
+        
+        supportButton.snp_makeConstraints { make in
+            make.left.right.equalTo(self.view)
+            make.bottom.equalTo(self.bottomLayoutGuide)
+            make.height.equalTo(50)
+        }
+        
     }
     
     //MARK handling actions
