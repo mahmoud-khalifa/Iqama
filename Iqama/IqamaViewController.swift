@@ -16,14 +16,13 @@ class IqamaViewController: UIViewController {
     var menuView = CVCalendarMenuView()
     var calendarView = CVCalendarView()
     
+    var selectedDay:DayView!
     let selectedDateLabel = UILabel()
     
     let prayTable = UITableView()
+    
     let supportButton = MDButton()
     
-    
-    var selectedDay:DayView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -109,7 +108,7 @@ class IqamaViewController: UIViewController {
     //MARK handling actions
     
     @objc private func showSupportOptions() {
-
+/*
         var supportActions = [MaterialAction]()
         for (title, id) in Constants.supportOptions {
             let supportAction = MaterialAction(icon: nil, title: title, handler: {(accessoryView) in
@@ -124,7 +123,7 @@ class IqamaViewController: UIViewController {
 
         self.presentViewController(supportMenu, animated: true, completion: nil)
         
-        /*
+        */
         // regualr action sheet
         let supportMenu = UIAlertController(title: "", message: "Support the ICB", preferredStyle: .ActionSheet)
         for (title, id) in Constants.supportOptions {
@@ -136,9 +135,10 @@ class IqamaViewController: UIViewController {
             }
             supportMenu.addAction(supportAction)
         }
+        supportMenu.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
         
         self.presentViewController(supportMenu, animated: true, completion: nil)
-        */
+ 
     }
 }
 
