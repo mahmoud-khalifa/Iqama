@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E2B78061DC8B23700C9A002 /* PrayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B78051DC8B23700C9A002 /* PrayType.swift */; };
+		1E2B780A1DC8BD5300C9A002 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B78091DC8BD5300C9A002 /* NSDateExtension.swift */; };
 		1EAF961E1DBBADD300C72812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF961D1DBBADD300C72812 /* AppDelegate.swift */; };
 		1EAF96201DBBADD300C72812 /* IqamaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF961F1DBBADD300C72812 /* IqamaViewController.swift */; };
 		1EAF96231DBBADD300C72812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAF96211DBBADD300C72812 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		07823347872EF0C1F61A7D38 /* Pods-Iqama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iqama.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Iqama/Pods-Iqama.debug.xcconfig"; sourceTree = "<group>"; };
 		1E2B78051DC8B23700C9A002 /* PrayType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayType.swift; sourceTree = "<group>"; };
+		1E2B78091DC8BD5300C9A002 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		1EAF961A1DBBADD300C72812 /* Iqama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iqama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAF961D1DBBADD300C72812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EAF961F1DBBADD300C72812 /* IqamaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IqamaViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				1EAF96291DBBADD300C72812 /* Info.plist */,
 				1EAF964B1DBBAF0600C72812 /* Constants.swift */,
 				1E2B78051DC8B23700C9A002 /* PrayType.swift */,
+				1E2B78091DC8BD5300C9A002 /* NSDateExtension.swift */,
 			);
 			path = Iqama;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2B780A1DC8BD5300C9A002 /* NSDateExtension.swift in Sources */,
 				1EAF96201DBBADD300C72812 /* IqamaViewController.swift in Sources */,
 				1EAF961E1DBBADD300C72812 /* AppDelegate.swift in Sources */,
 				1EAF964C1DBBAF0600C72812 /* Constants.swift in Sources */,
