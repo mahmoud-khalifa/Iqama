@@ -87,12 +87,12 @@ class IqamaViewController: UIViewController {
         
         calendarView.snp_makeConstraints { make in
             make.left.right.equalTo(self.view)
-            make.top.equalTo(menuView)
-            make.height.equalTo(100)
+            make.top.equalTo(menuView.snp_bottom)
+            make.height.equalTo(50)
         }
 
         selectedDateLabel.snp_makeConstraints { make in
-            make.top.equalTo(calendarView).offset(75)
+            make.top.equalTo(calendarView.snp_bottom)
             make.centerX.equalTo(calendarView)
             make.height.equalTo(21)
             make.width.equalTo(300)
