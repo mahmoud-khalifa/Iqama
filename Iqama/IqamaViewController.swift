@@ -19,7 +19,8 @@ class IqamaViewController: UIViewController {
     var selectedDay:DayView!
     let selectedDateLabel = UILabel()
     
-    let prayTable = UITableView()
+    let RowIdentifier = "PrayTimesCell"
+    let prayTimesTable = UITableView()
     
     let supportButton = MDButton()
     
@@ -46,9 +47,6 @@ class IqamaViewController: UIViewController {
 
 
     //MARK: - Private Helper methods
-    
-    //MARK: drawing the view
-    
     private func configureView() {
         // Calendar view
         menuView.menuViewDelegate = self
@@ -61,6 +59,11 @@ class IqamaViewController: UIViewController {
         selectedDateLabel.textAlignment = .Center
         selectedDateLabel.text = CVDate(date: NSDate()).commonDescription
         self.view.addSubview(selectedDateLabel)
+        
+        // PrayTimes tableView
+        prayTimesTable.dataSource = self
+        prayTimesTable.delegate = self
+        self.view.addSubview(prayTimesTable)
         
         // supportButton
         supportButton.setTitle("SUPPORT THE ICB", forState: .Normal)
@@ -94,7 +97,13 @@ class IqamaViewController: UIViewController {
             make.top.equalTo(calendarView.snp_bottom)
             make.centerX.equalTo(calendarView)
             make.height.equalTo(21)
-            make.width.equalTo(300)
+            make.width.equalTo(self.view)
+        }
+        
+        prayTimesTable.snp_makeConstraints { make in
+            make.top.equalTo(selectedDateLabel.snp_bottom)
+            make.width.equalTo(self.view)
+            make.bottom.equalTo(supportButton.snp_top)
         }
         
         supportButton.snp_makeConstraints { make in
@@ -170,3 +179,27 @@ extension IqamaViewController: CVCalendarViewDelegate, CVCalendarMenuViewDelegat
     }
     
 }
+
+// MARK: - UITableViewDataSource & UITableViewDelegate
+
+extension IqamaViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Constants.prayCount
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier(RowIdentifier)
+        if (cell == nil) {
+            
+            // Create new MDTableViewCell with default style, or you can subclass it.
+            cell = MDTableViewCell.init(style: .Default, reuseIdentifier: RowIdentifier)
+        }
+        return cell!
+    }
+    
+    
+    
+}
+
