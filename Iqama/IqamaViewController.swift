@@ -16,6 +16,8 @@ class IqamaViewController: UIViewController {
     var menuView = CVCalendarMenuView()
     var calendarView = CVCalendarView()
     
+    let selectedDateLabel = UILabel()
+    
     let prayTable = UITableView()
     let supportButton = MDButton()
     
@@ -35,6 +37,7 @@ class IqamaViewController: UIViewController {
         // Commit frames' updates
         menuView.commitMenuViewUpdate()
         calendarView.commitCalendarViewUpdate()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,7 +57,12 @@ class IqamaViewController: UIViewController {
         
         self.view.addSubview(menuView)
         self.view.addSubview(calendarView)
-    
+        
+        // Selected Date Label
+        selectedDateLabel.textAlignment = .Center
+        selectedDateLabel.text = CVDate(date: NSDate()).commonDescription
+        self.view.addSubview(selectedDateLabel)
+        
         // supportButton
         supportButton.setTitle("SUPPORT THE ICB", forState: .Normal)
         supportButton.backgroundColor = Constants.themeColor
@@ -83,6 +91,12 @@ class IqamaViewController: UIViewController {
             make.height.equalTo(100)
         }
 
+        selectedDateLabel.snp_makeConstraints { make in
+            make.top.equalTo(calendarView).offset(75)
+            make.centerX.equalTo(calendarView)
+            make.height.equalTo(21)
+            make.width.equalTo(300)
+        }
         
         supportButton.snp_makeConstraints { make in
             make.left.right.equalTo(self.view)
@@ -148,6 +162,11 @@ extension IqamaViewController: CVCalendarViewDelegate, CVCalendarMenuViewDelegat
     
     func shouldShowWeekdaysOut() -> Bool {
         return true
+    }
+    
+    func didSelectDayView(dayView: CVCalendarDayView, animationDidFinish: Bool) {
+        selectedDay = dayView
+        selectedDateLabel.text = dayView.date.commonDescription
     }
     
 }
