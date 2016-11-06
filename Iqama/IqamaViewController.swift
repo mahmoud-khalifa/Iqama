@@ -63,6 +63,7 @@ class IqamaViewController: UIViewController {
         // PrayTimes tableView
         prayTimesTable.dataSource = self
         prayTimesTable.delegate = self
+        prayTimesTable.registerClass(IqamaTableViewCell.self, forCellReuseIdentifier: RowIdentifier)
         self.view.addSubview(prayTimesTable)
         
         // supportButton
@@ -190,13 +191,8 @@ extension IqamaViewController: UITableViewDataSource, UITableViewDelegate {
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier(RowIdentifier)
-        if (cell == nil) {
-            
-            // Create new MDTableViewCell with default style, or you can subclass it.
-            cell = MDTableViewCell.init(style: .Default, reuseIdentifier: RowIdentifier)
-        }
-        return cell!
+        let cell = tableView.dequeueReusableCellWithIdentifier(RowIdentifier) as! IqamaTableViewCell
+        return cell
     }
     
     

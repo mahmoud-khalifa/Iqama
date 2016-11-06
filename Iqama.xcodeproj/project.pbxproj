@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E2B780C1DCF745B00C9A002 /* Pray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B780B1DCF745B00C9A002 /* Pray.swift */; };
+		1E2B78101DCF78F900C9A002 /* IqamaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B780F1DCF78F900C9A002 /* IqamaTableViewCell.swift */; };
 		1EAF961E1DBBADD300C72812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF961D1DBBADD300C72812 /* AppDelegate.swift */; };
 		1EAF96201DBBADD300C72812 /* IqamaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAF961F1DBBADD300C72812 /* IqamaViewController.swift */; };
 		1EAF96231DBBADD300C72812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAF96211DBBADD300C72812 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		07823347872EF0C1F61A7D38 /* Pods-Iqama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Iqama.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Iqama/Pods-Iqama.debug.xcconfig"; sourceTree = "<group>"; };
 		1E2B780B1DCF745B00C9A002 /* Pray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pray.swift; sourceTree = "<group>"; };
+		1E2B780F1DCF78F900C9A002 /* IqamaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IqamaTableViewCell.swift; sourceTree = "<group>"; };
 		1EAF961A1DBBADD300C72812 /* Iqama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iqama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAF961D1DBBADD300C72812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EAF961F1DBBADD300C72812 /* IqamaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IqamaViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				1EAF961F1DBBADD300C72812 /* IqamaViewController.swift */,
+				1E2B780F1DCF78F900C9A002 /* IqamaTableViewCell.swift */,
 				1EAF96241DBBADD300C72812 /* Assets.xcassets */,
 				1EAF96261DBBADD300C72812 /* LaunchScreen.storyboard */,
 				1EAF96211DBBADD300C72812 /* Main.storyboard */,
@@ -468,6 +471,7 @@
 				1EAF96201DBBADD300C72812 /* IqamaViewController.swift in Sources */,
 				1EAF961E1DBBADD300C72812 /* AppDelegate.swift in Sources */,
 				1E2B780C1DCF745B00C9A002 /* Pray.swift in Sources */,
+				1E2B78101DCF78F900C9A002 /* IqamaTableViewCell.swift in Sources */,
 				1EAF964C1DBBAF0600C72812 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
