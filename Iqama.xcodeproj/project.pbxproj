@@ -93,6 +93,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E2B780D1DCF786500C9A002 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EAF961F1DBBADD300C72812 /* IqamaViewController.swift */,
+				1EAF96241DBBADD300C72812 /* Assets.xcassets */,
+				1EAF96261DBBADD300C72812 /* LaunchScreen.storyboard */,
+				1EAF96211DBBADD300C72812 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1E2B780E1DCF788B00C9A002 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				1EAF964B1DBBAF0600C72812 /* Constants.swift */,
+				1E2B780B1DCF745B00C9A002 /* Pray.swift */,
+			);
+			name = Contoller;
+			sourceTree = "<group>";
+		};
 		1EAF96111DBBADD300C72812 = {
 			isa = PBXGroup;
 			children = (
@@ -118,14 +138,10 @@
 		1EAF961C1DBBADD300C72812 /* Iqama */ = {
 			isa = PBXGroup;
 			children = (
-				1EAF961D1DBBADD300C72812 /* AppDelegate.swift */,
-				1EAF961F1DBBADD300C72812 /* IqamaViewController.swift */,
-				1EAF96211DBBADD300C72812 /* Main.storyboard */,
-				1EAF96241DBBADD300C72812 /* Assets.xcassets */,
-				1EAF96261DBBADD300C72812 /* LaunchScreen.storyboard */,
 				1EAF96291DBBADD300C72812 /* Info.plist */,
-				1EAF964B1DBBAF0600C72812 /* Constants.swift */,
-				1E2B780B1DCF745B00C9A002 /* Pray.swift */,
+				1EAF961D1DBBADD300C72812 /* AppDelegate.swift */,
+				1E2B780D1DCF786500C9A002 /* View */,
+				1E2B780E1DCF788B00C9A002 /* Contoller */,
 			);
 			path = Iqama;
 			sourceTree = "<group>";
