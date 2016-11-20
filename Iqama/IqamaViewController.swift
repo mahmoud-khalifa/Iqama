@@ -24,12 +24,16 @@ class IqamaViewController: UIViewController {
     
     let supportButton = MDButton()
     
+    var prays: [Pray]?
+    let praysController = PraysController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureView()
         setupConstraints()
-        
+        refreshPrays(NSDate())
+
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -114,7 +118,10 @@ class IqamaViewController: UIViewController {
         }
         
     }
-    
+    private func refreshPrays(date: NSDate) {
+        prays = praysController.getPrays(date)
+        prayTimesTable.reloadData()
+    }
     //MARK handling actions
     
     @objc private func showSupportOptions() {
@@ -177,6 +184,7 @@ extension IqamaViewController: CVCalendarViewDelegate, CVCalendarMenuViewDelegat
     func didSelectDayView(dayView: CVCalendarDayView, animationDidFinish: Bool) {
         selectedDay = dayView
         selectedDateLabel.text = dayView.date.commonDescription
+        refreshPrays(dayView.date.convertedDate()!)
     }
     
 }
@@ -192,6 +200,10 @@ extension IqamaViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(RowIdentifier) as! IqamaTableViewCell
+        if let prays = self.prays {
+            cell.updateView(prays[indexPath.row])
+        }
+        
         return cell
     }
     
