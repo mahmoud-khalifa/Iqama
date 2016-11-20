@@ -14,6 +14,7 @@ public enum PrayType {
     case Asr
     case Maghrib
     case Isha
+    case FridayPray
 }
 
 class Pray: NSObject {
@@ -48,6 +49,8 @@ class Pray: NSObject {
             return "Maghrib"
         case .Isha:
             return "Isha"
+        case .FridayPray:
+            return "AlGomaa"
         }
     }
     
@@ -63,6 +66,8 @@ class Pray: NSObject {
             return "المغرب"
         case .Isha:
             return "العشاء"
+        case .FridayPray:
+            return "الجمعة"
         }
     }
     
@@ -72,7 +77,6 @@ class Pray: NSObject {
         let prayDateTime = startOfDay.dateByAddingTimeInterval(timeSinceMidnight)
         return prayDateTime
     }
-    
     
     private func getTimeSinceMidnight(prayType: PrayType, formatedTime: String) -> NSTimeInterval {
         let timeComponents = formatedTime.componentsSeparatedByString(":")
@@ -87,4 +91,5 @@ class Pray: NSObject {
         return timeSinceMidnight
         
     }
+    
 }

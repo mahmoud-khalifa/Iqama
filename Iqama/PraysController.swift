@@ -18,7 +18,13 @@ class PraysController: NSObject {
         
         
         prays.append(Pray(prayType: .Fajir, formattedTime: iqamaFormattedTimes[0]))
-        prays.append(Pray(prayType: .Dhuhr, formattedTime: iqamaFormattedTimes[1]))
+        
+        if isFridayPray(day) {
+            prays.append(Pray(prayType: .FridayPray, formattedTime: "1:30"))
+        } else {
+            prays.append(Pray(prayType: .Dhuhr, formattedTime: iqamaFormattedTimes[1]))
+        }
+        
         prays.append(Pray(prayType: .Asr, formattedTime: iqamaFormattedTimes[2]))
         prays.append(Pray(prayType: .Maghrib, formattedTime: iqamaFormattedTimes[3]))
         prays.append(Pray(prayType: .Isha, formattedTime: iqamaFormattedTimes[4]))
@@ -34,6 +40,11 @@ class PraysController: NSObject {
     
         let offset = (day != 31) ? (day - 1) / 10 : 2
         return 3 * (month - 1) + offset
+    }
+    
+    private func isFridayPray(date: NSDate) -> Bool {
+        let weekDay = Pray.cal.component(.Weekday, fromDate: date)
+        return weekDay == 6
     }
     
     
