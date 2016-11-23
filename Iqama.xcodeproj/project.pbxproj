@@ -270,6 +270,7 @@
 				TargetAttributes = {
 					1EAF96191DBBADD300C72812 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2W3C3JS5HU;
 					};
 					1EAF962D1DBBADD300C72812 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -621,9 +622,10 @@
 			baseConfigurationReference = 07823347872EF0C1F61A7D38 /* Pods-Iqama.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2W3C3JS5HU;
 				INFOPLIST_FILE = Iqama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lognlabs.icb.Iqama;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icb.Iqama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 2.3;
 			};
@@ -634,9 +636,10 @@
 			baseConfigurationReference = 38B5DDFB7B3932B31EB721AA /* Pods-Iqama.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2W3C3JS5HU;
 				INFOPLIST_FILE = Iqama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lognlabs.icb.Iqama;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icb.Iqama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 2.3;
 			};
